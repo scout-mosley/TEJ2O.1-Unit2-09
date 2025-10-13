@@ -10,7 +10,7 @@ game.setScore(0)
 
 // When shake, pick a new random number each time
 input.onGesture(Gesture.Shake, function () {
-    let randomNumber = randint(0, 2)
+    const randomNumber = randint(0, 2)
 
     // if randomNumber was 0 → Rock
     if (randomNumber == 0) {
