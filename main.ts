@@ -40,14 +40,17 @@ input.onGesture(Gesture.Shake, function () {
 
 // add 1 to score with Button A
 input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
     game.addScore(1)
-    basic.showIcon(IconNames.Yes)
     basic.pause(500)
     basic.showIcon(IconNames.Yes)
+    basic.pause(500)
+    basic.showIcon(IconNames.Happy)
 })
 
 // shows score
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(game.score())
+    basic.clearScreen()
+    basic.showString("Score:" + game.score())
     basic.showIcon(IconNames.Happy)
 })
