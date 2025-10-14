@@ -2,7 +2,7 @@
  *
  * Created by: scout mosley
  * Created on: oct 2025
- * This program plays rock paper scissor's 
+ * This program plays rock paper scissor's.
 */
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
