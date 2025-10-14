@@ -12,7 +12,7 @@ game.setScore(0)
 input.onGesture(Gesture.Shake, function () {
     const randomNumber = randint(0, 2)
 
-    // if randomNumber was 0 → Rock
+    // if randomNumber was 0 show Rock
     if (randomNumber == 0) {
         basic.showLeds(`
             . . . . .
@@ -23,12 +23,12 @@ input.onGesture(Gesture.Shake, function () {
         `)
     }
 
-    // if randomNumber was 1 → Paper
+    // if randomNumber was 1 show Paper
     if (randomNumber == 1) {
         basic.showIcon(IconNames.Square)
     }
 
-    // if randomNumber was 2 → Scissors
+    // if randomNumber was 2 show Scissors
     if (randomNumber == 2) {
         basic.showIcon(IconNames.Scissors)
     }
