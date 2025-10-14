@@ -16,10 +16,10 @@ input.onGesture(Gesture.Shake, function () {
     if (randomNumber == 0) {
         basic.showLeds(`
             . . . . .
-            . . . . .
             . # # # .
-            # . . . #
-            # . . . #
+            . # # # .
+            . # # # .
+            . . . . .
         `)
     }
 
